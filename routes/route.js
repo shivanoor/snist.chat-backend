@@ -13,6 +13,8 @@ import upload from "../utils/upload.js";
 
 const route = express.Router();
 
+const BASE_URL = process.env.BASE_URL;
+
 route.post("/add", addUser);
 route.get("/users", getUsers);
 
